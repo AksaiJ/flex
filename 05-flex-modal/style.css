@@ -20,6 +20,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  align-items: stretch;
+  padding: 10px 10px 10px 10px;
+  gap: 10px;
 }
 
 .icon {
@@ -27,13 +31,31 @@ body {
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+  width: 168px;
   height: 42px;
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1 1 auto;
+  margin-top: 10px;
 }
+
+.card.content {
+  flex: 1 1 auto;
+  display: flex;
+  align-content: center;
+  
+
+}
+
+.header {
+  display: inline-flex;
+  margin: 15px 0 10px 0;
+  font-weight: bolder;
+}
+
+
 
 .close-button {
   background: #eee;
@@ -43,20 +65,25 @@ body {
   font-size: 16px;
   height: 24px;
   width: 24px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  justify-self: right;
+  margin: 10px 2.5% 10px auto;
+  
 }
 
 button {
   padding: 8px 16px;
   border-radius: 8px;
+  margin: 10px 10px 10px 10px;
 }
 
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin-left: -2px;
 }
 
 button.cancel {
