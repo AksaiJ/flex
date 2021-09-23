@@ -4,14 +4,12 @@ html, body {
   height: 100%;
 }
 
-
-
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
+  /* I'll give you this one for free */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,8 +21,7 @@ body {
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   display: flex;
-
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   gap: 10px;
 }
 
@@ -40,24 +37,18 @@ body {
   align-items: center;
   justify-content: center;
   flex: 1 0 auto;
-  margin-top: 10px;
+  margin: 10px 10px auto 0;
 }
 
 .card.content {
-  flex: 1 1 auto;
   display: flex;
-  align-content: center;
-  
-
-}
-
-.header {
-  display: inline-flex;
-  margin: 15px 0 10px 0;
+  padding: 10px 0 10px 0;
   font-weight: bolder;
+  align-content: center;
+  justify-content: space-between;
+  font-size: larger;
+  
 }
-
-
 
 .close-button {
   background: #eee;
@@ -67,25 +58,23 @@ body {
   font-size: 16px;
   height: 24px;
   width: 24px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center; 
-  justify-self: right;
-  margin: 10px 2.5% 10px auto;
+  justify-content: center;
   
 }
 
 button {
   padding: 8px 16px;
   border-radius: 8px;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 1px;
 }
 
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
-  margin-left: -2px;
+  margin-left: -1px;
 }
 
 button.cancel {
